@@ -11,7 +11,7 @@
     "main": "node.js",
     "devDependencies": {},
     "scripts": {
-        "start": "node node.js"
+        "start": "node src/node.js"
     },
     "repository": {
         "type": "git",

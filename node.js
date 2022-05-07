@@ -7,7 +7,7 @@ const path = require('path');
 const directory = path.join(__dirname, "publics");
 
 app.set('view engine', 'hbs');
-const port = 2005;
+const port = process.env.PORT || '2005';
 const si = require('systeminformation');
 let temp;
 let temps;
@@ -87,4 +87,4 @@ app.get('/', (req, res) => {
 
 });
 
-app.listen(port);
+app.listen(port, () => { console.log('test') });
